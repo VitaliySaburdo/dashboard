@@ -30,6 +30,7 @@
 }
 
 .sidebar__wrapper {
+  padding-left: 11px;
   display: flex;
   gap: 14px;
   margin-bottom: 40px;
@@ -44,5 +45,40 @@
 
 .user {
   display: flex;
+  gap: 12px;
   margin-top: auto;
+}
+
+.user_name {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-title-color);
+}
+
+.user__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--lite-grey-text);
+}
+.content {
+  padding: 41px 95px 258px 71px;
+  background-color: var(--accent-color);
+}
+
+.content__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--text-title-color);
+  margin-bottom: 51px;
+}
+
+.blog {
+  background-color: var(--wite-background-color);
+}
+
+.blog__header {
+  display: flex;
 }

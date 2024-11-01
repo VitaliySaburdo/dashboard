@@ -21,8 +21,9 @@ li > a {
 
   &.active {
     padding: 11px 8px 11px 11px;
-    background-color: black;
+    background-color: var(--active-link-color);
     border-radius: 8px;
+    color: var(--wite-text-color);
   }
 }
 
