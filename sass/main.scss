@@ -1,0 +1,21 @@
+// Util styles
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/visualy-hiden';
+@import './utils/animation';
+
+// Base styles
+@import './base/reset-styles';
+@import './base/body-settings';
+@import './base/section-settings';
+@import './base/container-setting';
+
+// Components styles
+@import './components/site-logo';
+@import './components/scroll-up-button';
+@import './components/button';
+@import './components/mobile-burger-menu';
+@import './components/modal-window';
+
+// Layout styles
+@import './layout/dashboard';
