@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- Title -->
     <title>Dashboard</title>
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <main class="main">
@@ -115,9 +116,18 @@
                   <div class="blog__wrapper">
                     <h3 class="blog__title">All Customers</h3>
                     <p class="blog__title--status">Active Members</p>
-                    <div class="blog__input">
-                      <input type="text" />
-                    </div>
+                  </div>
+                  <div class="blog__input--wrapper">
+                    <img
+                      class="blog__img"
+                      src="./images/search.png"
+                      alt="search"
+                    />
+                    <input
+                      class="blog__input"
+                      type="text"
+                      placeholder="Search"
+                    />
                   </div>
                 </div>
                 <table>
@@ -131,16 +141,7 @@
                       <th>Status</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>Jane Cooper</td>
-                      <td>Microsoft</td>
-                      <td>(225) 555-0118</td>
-                      <td>jane@microsoft.com</td>
-                      <td>United States</td>
-                      <td><button>Active</button></td>
-                    </tr>
-                  </tbody>
+                  <tbody></tbody>
                 </table>
                 <div class="blog__footer">
                   <p class="blog__txt">Showing data 1 to 8 of 256K entries</p>
