@@ -162,7 +162,7 @@ body {
   margin-bottom: 64px;
 }
 
-.sidebar__box {
+.sidebar__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,13 +396,43 @@ table {
 
 table th {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: -0.01em;
   color: var(--title-table-color);
 }
+@media screen and (min-width: 1200px) {
+  table th {
+    font-size: 14px;
+  }
+}
 
-table th,
+@media screen and (min-width: 1200px) {
+  thead {
+    position: relative;
+  }
+  thead::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -38px;
+    width: 968px;
+    height: 1px;
+    background-color: #ddd;
+  }
+}
+
+table th {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ddd;
+}
+@media screen and (min-width: 1200px) {
+  table th {
+    border-bottom: none;
+  }
+}
+
 table td {
+  font-size: 10px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
