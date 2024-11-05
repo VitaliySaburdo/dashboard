@@ -14,7 +14,7 @@
   line-height: calc($lh/$fs);
 }
 
-@mixin section($pt: 60px, $pb: 60px) {
+@mixin section($pt: 0, $pb: 0) {
   padding-top: $pt;
   padding-bottom: $pb;
 }

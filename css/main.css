@@ -101,8 +101,8 @@ body {
 }
 
 .main__section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media screen and (min-width: 1200px) {
   .main__section {
@@ -115,7 +115,7 @@ body {
 .main__container {
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  width: 375px;
 }
 @media screen and (min-width: 768px) {
   .main__container {
@@ -389,6 +389,7 @@ li.nav__item > a.active {
 }
 
 table {
+  width: 375px;
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 30px;
@@ -439,28 +440,38 @@ table td {
   border-bottom: 1px solid #ddd;
 }
 
-td div {
-  border-radius: 4px;
-  margin: 0 auto;
-  padding: 4px 12px;
-  width: 80px;
-  height: 29px;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.01em;
-  text-transform: capitalize;
+@media screen and (min-width: 1200px) {
+  td div {
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 4px 12px;
+    width: 80px;
+    height: 29px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+  }
 }
 
 td div.active {
-  border: 1px solid #00b087;
-  background-color: var(--success-background-color);
   color: var(--btn-success-color);
+}
+@media screen and (min-width: 1200px) {
+  td div.active {
+    border: 1px solid #00b087;
+    background-color: var(--success-background-color);
+  }
 }
 
 td div.inactive {
-  border: 1px solid #df0404;
-  background-color: #ffc5c5;
   color: #df0404;
+}
+@media screen and (min-width: 1200px) {
+  td div.inactive {
+    border: 1px solid #df0404;
+    background-color: #ffc5c5;
+  }
 }
 
 .pagination__list {
