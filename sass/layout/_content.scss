@@ -1,6 +1,10 @@
 .content {
-  padding: 41px 95px 258px 71px;
+  flex: 1;
   background-color: var(--accent-color);
+  padding: 40px 10px 30px 10px;
+  @include mq(desk) {
+    padding: 41px 95px 258px 71px;
+  }
 }
 
 .content__title {

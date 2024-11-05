@@ -23,14 +23,15 @@ html(lang="en")
       section.main__section
         .main__container
           .main__wrapper
-            .sidebar
+            .sidebar__wrapper
               a.sidebar__logo(href="#")
-                svg(width="37" height="37")
+                svg.sidebar__logo--icon(width="37" height="37")
                   use(href="./images/sprite.svg#icon-logo")
-                h1.sidebar__title
-                  | #{pageTitle}
+                .sidebar__box  
+                  h1.sidebar__title
+                    | #{pageTitle}
                   span.sidebar__txt v.01
-              .sidebar__wrapper
+              .sidebar__box
                 svg(width="24" height="24")
                   use(href="./images/sprite.svg#icon-key")
                 p.sidebar__title--menu #{pageTitle}
@@ -85,8 +86,22 @@ html(lang="en")
                   .pagination
                     ul.pagination__list
                       li.pagination__item
-                        a.pagination__link(href="") 1
+                        a.pagination__link(href="")
+                         svg(width="8" height="12")
+                          use(href=`./images/sprite.svg#icon-arr_left`)
+                      li.pagination__item.active
+                        a.pagination__link(href="#") 1
                       li.pagination__item
-                        a.pagination__link(href="") 1
+                        a.pagination__link(href="#") 2
                       li.pagination__item
-                        a.pagination__link(href="") 1
+                        a.pagination__link(href="#") 3
+                      li.pagination__item
+                        a.pagination__link(href="#") 4
+                      li.pagination__dots ...
+                      li.pagination__item
+                        a.pagination__link(href="#")
+                         svg(width="8" height="12")
+                          use(href=`./images/sprite.svg#icon-arr-right`)
+                        
+                        
+

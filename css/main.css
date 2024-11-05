@@ -14,15 +14,15 @@
   --gray-txt-color: #838383;
   --active-link-color: #5932ea;
   --success-border-color: #00b087;
+  --pagination-txt-color: #404b52;
+  --pagination-txt-active-color: #f5f5f5;
   /* Background-color */
   --wite-background-color: #ffffff;
   --accent-color: #fafbff;
   --success-background-color: rgba(22, 192, 152, 0.38);
+  --pagination-background-color: #f5f5f5;
   /* Line color */
-  --header-line-color: #ececec;
-  /* Icon color*/
-  --primary-icon-color: #afb1b8;
-  --second-icon-color: #ffffff;
+  --pagination-border-color: #eeeeee;
 }
 
 .visually-hidden {
@@ -115,11 +115,7 @@ body {
 .main__container {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .main__container {
-    width: 480px;
-  }
+  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .main__container {
@@ -138,30 +134,45 @@ body {
   display: flex;
 }
 
-.sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 306px;
-  height: 1198px;
-  padding: 36px 28px 76px 28px;
+.sidebar__wrapper {
+  display: none;
 }
-
-.content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+@media screen and (min-width: 1200px) {
+  .sidebar__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 306px;
+    height: 1198px;
+    padding: 36px 28px 76px 28px;
+  }
 }
 
 .sidebar__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 64px;
+}
+
+.sidebar__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.sidebar__logo--icon {
+  margin-right: 8px;
 }
 
 .sidebar__title {
@@ -169,7 +180,7 @@ body {
   font-size: 26px;
   letter-spacing: 0.01em;
   color: var(--text-title-color);
-  margin-bottom: 64px;
+  margin-right: 8px;
 }
 
 .sidebar__txt {
@@ -177,9 +188,10 @@ body {
   font-size: 10px;
   letter-spacing: -0.01em;
   color: var(--gray-txt-color);
+  text-align: start;
 }
 
-.sidebar__wrapper {
+.sidebar__box {
   padding-left: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,8 +208,16 @@ body {
 }
 
 .content {
-  padding: 41px 95px 258px 71px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background-color: var(--accent-color);
+  padding: 40px 10px 30px 10px;
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    padding: 41px 95px 258px 71px;
+  }
 }
 
 .content__title {
@@ -285,11 +305,16 @@ li.nav__item > a.active {
 }
 
 .blog {
-  padding: 25px 44px 46px 38px;
   background-color: var(--wite-background-color);
   border-radius: 30px;
   -webkit-box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
           box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+  padding: 25px 10px 46px 10px;
+}
+@media screen and (min-width: 1200px) {
+  .blog {
+    padding: 25px 44px 46px 38px;
+  }
 }
 
 .blog__header {
@@ -406,4 +431,53 @@ td div.inactive {
   border: 1px solid #df0404;
   background-color: #ffc5c5;
   color: #df0404;
+}
+
+.pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.pagination__item {
+  border: 1px solid var(--pagination-border-color);
+  border-radius: 4px;
+  background-color: var(--pagination-background-color);
+}
+
+.pagination__item.active {
+  background-color: var(--active-link-color);
+  border: 1px solid var(--active-link-color);
+}
+.pagination__item.active .pagination__link {
+  color: var(--pagination-txt-active-color);
+}
+
+.pagination__link {
+  width: 26px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  color: var(--pagination-txt-color);
+}
+
+.pagination__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=main.css.map */

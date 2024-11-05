@@ -1,8 +1,11 @@
 .blog {
-  padding: 25px 44px 46px 38px;
   background-color: var(--wite-background-color);
   border-radius: 30px;
   box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+  padding: 25px 10px 46px 10px;
+  @include mq(desk) {
+    padding: 25px 44px 46px 38px;
+  }
 }
 
 .blog__header {
