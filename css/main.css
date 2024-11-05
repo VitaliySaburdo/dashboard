@@ -479,7 +479,7 @@ td div.inactive {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 320px) and (max-width: 479.98px) {
   th,
   td {
     /* Customer Name */

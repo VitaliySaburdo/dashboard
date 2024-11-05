@@ -81,7 +81,7 @@ td div.inactive {
 
 th,
 td {
-  @include mq(desk) {
+  @include mq(mob-sm-only) {
     &:nth-child(1) {
       width: 35px;
     } /* Customer Name */
