@@ -104,7 +104,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .main__section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -122,7 +122,7 @@ body {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .main__container {
     width: 1440px;
   }
@@ -137,7 +137,7 @@ body {
 .sidebar__wrapper {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .sidebar__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,19 +212,27 @@ body {
       -ms-flex: 1;
           flex: 1;
   background-color: var(--accent-color);
-  padding: 40px 0px 30px 0px;
+  padding: 40px 5px 30px 5px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .content {
     padding: 41px 95px 258px 71px;
   }
 }
 
 .content__title {
+  font-size: 14px;
   font-weight: 500;
-  font-size: 24px;
   color: var(--text-title-color);
-  margin-bottom: 51px;
+  margin-left: 20px;
+  margin-bottom: 21px;
+}
+@media screen and (min-width: 1440px) {
+  .content__title {
+    font-size: 24px;
+    margin-bottom: 51px;
+    margin-left: 0;
+  }
 }
 
 .user {
@@ -311,7 +319,7 @@ li.nav__item > a.active {
           box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
   padding: 25px 10px 46px 10px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .blog {
     padding: 25px 44px 46px 38px;
   }
@@ -332,17 +340,27 @@ li.nav__item > a.active {
 
 .blog__title {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: -0.01em;
   color: var(--text-title-color);
   margin-bottom: 7px;
 }
+@media screen and (min-width: 1440px) {
+  .blog__title {
+    font-size: 22px;
+  }
+}
 
 .blog__title--status {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: -0.01em;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 1440px) {
+  .blog__title--status {
+    font-size: 14px;
+  }
 }
 
 .blog__input--wrapper {
@@ -384,7 +402,7 @@ li.nav__item > a.active {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .blog__footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -401,7 +419,7 @@ li.nav__item > a.active {
   letter-spacing: -0.01em;
   color: #b5b7c0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .blog__txt {
     font-size: 14px;
   }
@@ -420,13 +438,13 @@ table th {
   letter-spacing: -0.01em;
   color: var(--title-table-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   table th {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   thead {
     position: relative;
   }
@@ -445,7 +463,7 @@ table th {
   padding-bottom: 14px;
   border-bottom: 1px solid #ddd;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   table th {
     border-bottom: none;
   }
@@ -458,13 +476,13 @@ table td {
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   table td {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   td div {
     border-radius: 4px;
     margin: 0 auto;
@@ -481,7 +499,7 @@ table td {
 td div.active {
   color: var(--btn-success-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   td div.active {
     border: 1px solid #00b087;
     background-color: var(--success-background-color);
@@ -491,7 +509,7 @@ td div.active {
 td div.inactive {
   color: #df0404;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   td div.inactive {
     border: 1px solid #df0404;
     background-color: #ffc5c5;
