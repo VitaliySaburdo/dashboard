@@ -8,7 +8,7 @@
 }
 
 .content__title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--text-title-color);
   margin-left: 20px;
@@ -18,4 +18,9 @@
     margin-bottom: 51px;
     margin-left: 0;
   }
+}
+
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
