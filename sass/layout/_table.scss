@@ -44,6 +44,9 @@ table td {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  @include mq(desk) {
+    font-size: 14px;
+  }
 }
 
 td div {
@@ -78,22 +81,25 @@ td div.inactive {
 
 th,
 td {
-  &:nth-child(1) {
-    width: 35px;
-  } /* Customer Name */
-  &:nth-child(2) {
-    width: 35px;
-  } /* Company */
-  &:nth-child(3) {
-    width: 35px;
-  } /* Phone Number */
-  &:nth-child(4) {
-    width: 35px;
-  } /* Email */
-  &:nth-child(5) {
-    width: 35px;
-  } /* Country */
-  &:nth-child(6) {
-    width: 35px;
-  } /* Status */
+  @include mq(desk) {
+    &:nth-child(1) {
+      width: 35px;
+    } /* Customer Name */
+    &:nth-child(2) {
+      width: 35px;
+    } /* Company */
+    &:nth-child(3) {
+      width: 35px;
+    } /* Phone Number */
+    &:nth-child(4) {
+      width: 55px;
+      word-break: break-word;
+    } /* Email */
+    &:nth-child(5) {
+      width: 35px;
+    } /* Country */
+    &:nth-child(6) {
+      width: 35px;
+    } /* Status */
+  }
 }
