@@ -212,7 +212,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   background-color: var(--accent-color);
-  padding: 40px 10px 30px 10px;
+  padding: 40px 0px 30px 0px;
 }
 @media screen and (min-width: 1200px) {
   .content {
@@ -472,6 +472,40 @@ td div.inactive {
     border: 1px solid #df0404;
     background-color: #ffc5c5;
   }
+}
+
+th,
+td {
+  /* Customer Name */
+  /* Company */
+  /* Phone Number */
+  /* Email */
+  /* Country */
+  /* Status */
+}
+th:nth-child(1),
+td:nth-child(1) {
+  width: 35px;
+}
+th:nth-child(2),
+td:nth-child(2) {
+  width: 35px;
+}
+th:nth-child(3),
+td:nth-child(3) {
+  width: 35px;
+}
+th:nth-child(4),
+td:nth-child(4) {
+  width: 35px;
+}
+th:nth-child(5),
+td:nth-child(5) {
+  width: 35px;
+}
+th:nth-child(6),
+td:nth-child(6) {
+  width: 35px;
 }
 
 .pagination__list {
