@@ -1,0 +1,19 @@
+  table
+    thead
+      tr
+        th Customer Name
+        th Company
+        th Phone Number
+        th Email
+        th Country
+        th Status
+    tbody
+      each item in data
+        tr
+          td= item.name
+          td= item.company
+          td= item.phone_number
+          td= item.email
+          td= item.country
+          td
+            div(class=item.status)= item.status
