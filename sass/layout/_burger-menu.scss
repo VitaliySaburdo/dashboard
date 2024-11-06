@@ -1,6 +1,6 @@
 .burger-menu__wrapper {
   display: block;
-  @include mq(tab) {
+  @include mq(mob) {
     display: none;
   }
 }
@@ -49,7 +49,7 @@
     bottom: 6.5px;
   }
 
-  @include mq(tab) {
+  @include mq(mob) {
     display: none;
   }
 }

@@ -4,13 +4,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include mq(no-Desk) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @include mq(tab) {
-    width: 768px;
+  @include mq(mob) {
+    width: 480px;
   }
 
   @include mq(desk) {

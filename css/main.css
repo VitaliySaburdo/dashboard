@@ -117,9 +117,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 375px) {
   .main__container {
-    width: 768px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -210,11 +210,6 @@ body {
 .burger-menu__wrapper {
   display: block;
 }
-@media screen and (min-width: 768px) {
-  .burger-menu__wrapper {
-    display: none;
-  }
-}
 
 .burger-menu {
   position: relative;
@@ -257,7 +252,7 @@ body {
           transform: rotate(-45deg);
   bottom: 6.5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .burger-menu {
     display: none;
   }
@@ -297,7 +292,7 @@ body {
           transform: translateX(0);
   pointer-events: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .mobile-menu {
     display: none;
   }
