@@ -348,7 +348,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  margin-top: auto;
+  margin-top: 50px;
+}
+@media screen and (min-width: 1440px) {
+  .user {
+    margin-top: auto;
+  }
 }
 
 .user_name {

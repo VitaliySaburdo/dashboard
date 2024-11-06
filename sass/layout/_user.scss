@@ -1,7 +1,10 @@
 .user {
   display: flex;
   gap: 12px;
-  margin-top: auto;
+  margin-top: 50px;
+  @include mq(desk) {
+    margin-top: auto;
+  }
 }
 
 .user_name {
