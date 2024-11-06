@@ -74,7 +74,7 @@
   font-weight: 500;
   font-size: 10px;
   letter-spacing: -0.01em;
-  color: #b5b7c0;
+  color: var(--secondary-text-color);
   @include mq(desk) {
     font-size: 14px;
   }
