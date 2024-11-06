@@ -31,11 +31,11 @@ html(lang="en")
                   h1.sidebar__title
                     | #{pageTitle}
                   span.sidebar__txt v.01
-              .sidebar__box
+              .sidebar__box.fade-in
                 svg(width="24" height="24")
                   use(href="./images/sprite.svg#icon-key")
                 p.sidebar__title--menu #{pageTitle}
-              nav.nav
+              nav.nav.fade-in
                 ul.nav__list
                   each item in navItems
                     li.nav__item
@@ -46,7 +46,7 @@ html(lang="en")
                           p.nav__txt #{item.text}
                         svg(width="16" height="16")
                           use(href=`./images/sprite.svg#${item.active ? 'icon-arrow-active' : 'icon-arrow'}`)
-              .user
+              .user.fade-in
                 img.user__img(src="./images/user.png" alt="user")
                 .user__box
                   p.user__name #{userName}
@@ -75,15 +75,15 @@ html(lang="en")
                       p.user__name #{userName}
                       p.user__title #{userRole}
               .blog
-                .blog__header
+                .blog__header.fade-in
                   .blog__wrapper
                     h3.blog__title All Customers
                     p.blog__title--status Active Members
-                  .blog__input--wrapper
+                  .blog__input--wrapper.fade-in
                     svg.blog__img(width="24" height="24")
                       use(href="./images/sprite.svg#icon-search")
                     input.blog__input(type="text" placeholder="Search")
-                table
+                table.fade-in
                   thead
                     tr
                       th Customer Name

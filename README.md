@@ -28,7 +28,7 @@
 
 ### Install and usage
 
-Clone this repository to your local machine using git clone https://github.com/VitaliySaburdo/todo-app. Install Live Server in vscode. Run Live Server to start the development server. Open http://127.0.0.1:5500/ in your web browser.
+Clone this repository to your local machine using git clone https://github.com/VitaliySaburdo/todo-app. Install Live Server in vscode. Run Live Server to start the development server. Open Port:5500 in your web browser.
 
 ### Screenshot
 
