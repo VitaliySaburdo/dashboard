@@ -5,7 +5,7 @@
   margin-right: auto;
 
   @include mq(mob) {
-    width: 480px;
+    width: 375px;
   }
 
   @include mq(desk) {

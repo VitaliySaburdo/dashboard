@@ -1,6 +1,6 @@
 .burger-menu__wrapper {
   display: block;
-  @include mq(tab) {
+  @include mq(desk) {
     display: none;
   }
 }
@@ -77,7 +77,7 @@
     pointer-events: auto;
   }
 
-  @include mq(desk) {
+  @include mq(tab) {
     display: none;
   }
 }
