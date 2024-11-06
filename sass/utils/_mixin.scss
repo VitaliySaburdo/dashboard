@@ -26,8 +26,7 @@
 }
 
 @mixin mq($range) {
-  $min: 320px;
-  $mob: 480px;
+  $mob: 375px;
   $tab: 768px;
   $desk: 1440px;
 

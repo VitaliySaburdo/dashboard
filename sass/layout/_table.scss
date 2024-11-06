@@ -81,25 +81,23 @@ td div.inactive {
 
 th,
 td {
-  @include mq(mob-sm-only) {
-    &:nth-child(1) {
-      width: 35px;
-    } /* Customer Name */
-    &:nth-child(2) {
-      width: 15px;
-    } /* Company */
-    &:nth-child(3) {
-      width: 35px;
-    } /* Phone Number */
-    &:nth-child(4) {
-      width: 55px;
-      word-break: break-word;
-    } /* Email */
-    &:nth-child(5) {
-      width: 35px;
-    } /* Country */
-    &:nth-child(6) {
-      width: 15px;
-    } /* Status */
-  }
+  &:nth-child(1) {
+    width: 35px;
+  } /* Customer Name */
+  &:nth-child(2) {
+    width: 15px;
+  } /* Company */
+  &:nth-child(3) {
+    width: 35px;
+  } /* Phone Number */
+  &:nth-child(4) {
+    width: 55px;
+    word-break: break-word;
+  } /* Email */
+  &:nth-child(5) {
+    width: 35px;
+  } /* Country */
+  &:nth-child(6) {
+    width: 15px;
+  } /* Status */
 }
