@@ -54,7 +54,26 @@ html(lang="en")
             .content
               .content__wrapper
                 h2.content__title Hello #{userName} 👋🏼,
-                include ./view/partial/burger-menu.pug
+                .burger-menu__wrapper
+                  .burger-menu#burger-menu
+                    span
+                .mobile-menu#mobile-menu
+                  nav.nav
+                   ul.nav__list
+                     each item in navItems
+                      li.nav__item
+                        a(href="#" class=item.active ? 'active' : '')
+                          .nav__box(class=item.active ? 'active' : '')
+                           svg(width="24" height="24")
+                             use(href=`./images/sprite.svg#${item.icon}`)
+                           p.nav__txt #{item.text}
+                          svg(width="16" height="16")
+                            use(href=`./images/sprite.svg#${item.active ? 'icon-arrow-active' : 'icon-arrow'}`)
+                  .user
+                    img.user__img(src="./images/user.png" alt="user")
+                    .user__box
+                      p.user__name #{userName}
+                      p.user__title #{userRole}
               .blog
                 .blog__header
                   .blog__wrapper
