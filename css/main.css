@@ -21,7 +21,7 @@
   --wite-background-color: #ffffff;
   --accent-color: #fafbff;
   --success-background-color: rgba(22, 192, 152, 0.38);
-  --failure-background-color:#ffc5c5
+  --failure-background-color: #ffc5c5;
   --pagination-background-color: #f5f5f5;
   /* Line color */
   --pagination-border-color: #eeeeee;
@@ -372,6 +372,15 @@ body {
   color: var(--lite-grey-text);
 }
 
+.nav {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1440px) {
+  .nav {
+    margin-top: 0;
+  }
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,11 +629,11 @@ td div.active {
 }
 
 td div.inactive {
-  color: var(--btn-failure-colo);
+  color: var(--btn-failure-color);
 }
 @media screen and (min-width: 1440px) {
   td div.inactive {
-    border: 1px solid var(--btn-failure-colo);
+    border: 1px solid var(--btn-failure-color);
     background-color: var(--failure-background-color);
   }
 }
@@ -633,6 +642,12 @@ th:nth-child(4),
 td:nth-child(4) {
   width: 55px;
   word-break: break-word;
+}
+@media screen and (min-width: 1440px) {
+  th:nth-child(4),
+  td:nth-child(4) {
+    word-break: normal;
+  }
 }
 
 .pagination__list {
