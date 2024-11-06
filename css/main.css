@@ -280,13 +280,10 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: var(--text-title-color);
-  margin-left: 20px;
-  margin-bottom: 21px;
 }
 @media screen and (min-width: 1440px) {
   .content__title {
     font-size: 24px;
-    margin-bottom: 51px;
     margin-left: 0;
   }
 }
@@ -298,6 +295,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .content__wrapper {
+    margin-bottom: 51px;
+  }
 }
 
 .user {

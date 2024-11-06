@@ -52,7 +52,9 @@ html(lang="en")
                   p.user__name #{userName}
                   p.user__title #{userRole}
             .content
-              h2.content__title Hello #{userName} 👋🏼,
+              .content__wrapper
+                h2.content__title Hello #{userName} 👋🏼,
+                include ./view/partial/burger-menu.pug
               .blog
                 .blog__header
                   .blog__wrapper
