@@ -1,0 +1,11 @@
+nav.nav.fade-in
+  ul.nav__list
+    each item in navItems
+      li.nav__item
+        a(href="#" class=item.active ? 'active' : '')
+          .nav__box(class=item.active ? 'active' : '')
+            svg(width="24" height="24")
+              use(href=`./images/sprite.svg#${item.icon}`)
+            p.nav__txt #{item.text}
+          svg(width="16" height="16")
+            use(href=`./images/sprite.svg#${item.active ? 'icon-arrow-active' : 'icon-arrow'}`)
