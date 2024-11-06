@@ -1,3 +1,7 @@
+/**
+ *  Open mobile menu
+ */
+
 const burgerMenu = document.querySelector('#burger-menu');
 const mobilMenu = document.querySelector('#mobile-menu');
 
@@ -5,6 +9,10 @@ burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('active');
   mobilMenu.classList.toggle('active');
 });
+
+/**
+ *  Animation on start
+ */
 
 document.addEventListener('DOMContentLoaded', () => {
   const fadeInElements = document.querySelectorAll('.fade-in');
